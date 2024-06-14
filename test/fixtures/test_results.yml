@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  genetic_test: one
+  gene: MyString
+  variant: MyString
+  clinical_significance: MyString
+  date_analyzed: 2024-06-14
+
+two:
+  genetic_test: two
+  gene: MyString
+  variant: MyString
+  clinical_significance: MyString
+  date_analyzed: 2024-06-14
