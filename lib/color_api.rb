@@ -1,3 +1,7 @@
+require 'net/http'
+require 'uri'
+require 'json'
+
 class ColorApi
   API_BASE_URL = ENV['COLOR_API_BASE_URL']
 

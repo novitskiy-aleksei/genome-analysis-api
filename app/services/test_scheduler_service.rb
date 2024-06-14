@@ -1,3 +1,5 @@
+require 'color_api'
+
 class TestSchedulerService
   PROVIDERS = {
     color: 'ColorApi',
