@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec682aa-8bb1-45dd-a669-9c3250e2c381" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718352419441</updated>
       <workItem from="1718352420760" duration="15161000" />
-      <workItem from="1718389717310" duration="6516000" />
+      <workItem from="1718389717310" duration="7641000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -246,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718400063713</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Switch to mysql in production">
+      <option name="closed" value="true" />
+      <created>1718401499970</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718401499970</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Switch to mysql in production">
+      <option name="closed" value="true" />
+      <created>1718401590698</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718401590698</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +280,7 @@
     <MESSAGE value="Added postman collection" />
     <MESSAGE value="Update ruby version" />
     <MESSAGE value="Update bundler platform" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update bundler platform" />
+    <MESSAGE value="Switch to mysql in production" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switch to mysql in production" />
   </component>
 </project>
