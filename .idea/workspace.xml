@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec682aa-8bb1-45dd-a669-9c3250e2c381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/integrations/mock_api.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.tool-versions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ruby-version" beforeDir="false" afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/genetic_tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/genetic_tests_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/test_scheduler_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/test_scheduler_service.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/workers/check_status_worker.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/workers/check_status_worker.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/sidekiq.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/sidekiq.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20240614084128_create_genetic_tests.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20240614084128_create_genetic_tests.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/color_api.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/integrations/color_api.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/genetic_tests_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/genetic_tests_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718352419441</updated>
       <workItem from="1718352420760" duration="15161000" />
-      <workItem from="1718389717310" duration="4377000" />
+      <workItem from="1718389717310" duration="5534000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -226,7 +215,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718388311499</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixes, dynamic integration change, statuses align, mock api">
+      <option name="closed" value="true" />
+      <created>1718398777098</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718398777098</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added postman collection">
+      <option name="closed" value="true" />
+      <created>1718398860225</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718398860225</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +246,8 @@
     <MESSAGE value="Simplify controllers, fix member_id receiving" />
     <MESSAGE value="Added seeds, tests" />
     <MESSAGE value="Smoke fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Smoke fixes" />
+    <MESSAGE value="Fixes, dynamic integration change, statuses align, mock api" />
+    <MESSAGE value="Added postman collection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added postman collection" />
   </component>
 </project>
