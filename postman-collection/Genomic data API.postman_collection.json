@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "74337014-dedc-4f2f-982f-7a3c7e712b29",
+		"name": "Genomic data API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21235610"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"member_id\": 1,\n  \"test_type\": \"exome\",\n  \"sample_type\": \"saliva\",\n  \"provider\": \"mock\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "/genetic_tests/register",
+					"path": [
+						"genetic_tests",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "results",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/genetic_tests/1/results",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"genetic_tests",
+						"1",
+						"results"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
