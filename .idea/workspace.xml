@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec682aa-8bb1-45dd-a669-9c3250e2c381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.tool-versions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ruby-version" beforeDir="false" afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718352419441</updated>
       <workItem from="1718352420760" duration="15161000" />
-      <workItem from="1718389717310" duration="5534000" />
+      <workItem from="1718389717310" duration="6516000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -231,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718398860225</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update ruby version">
+      <option name="closed" value="true" />
+      <created>1718399968691</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718399968691</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update bundler platform">
+      <option name="closed" value="true" />
+      <created>1718400063713</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718400063713</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +263,8 @@
     <MESSAGE value="Smoke fixes" />
     <MESSAGE value="Fixes, dynamic integration change, statuses align, mock api" />
     <MESSAGE value="Added postman collection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added postman collection" />
+    <MESSAGE value="Update ruby version" />
+    <MESSAGE value="Update bundler platform" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update bundler platform" />
   </component>
 </project>
