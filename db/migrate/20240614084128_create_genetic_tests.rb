@@ -1,13 +1,16 @@
-class CreateGeneticTests < ActiveRecord::Migration[7.0]
+class CreateGeneticTests < ActiveRecord::Migration[6.1]
   def change
     create_table :genetic_tests do |t|
-      t.references :patient, null: false, foreign_key: true
-      t.string :test_type
-      t.string :sample_type
-      t.string :status
+      t.integer :member_id, null: false
+      t.string :test_type, null: false
+      t.string :sample_type, null: false
+      t.string :status, null: false, default: 'pending'
       t.date :collection_date
+      t.text :results
 
       t.timestamps
     end
+
+    add_index :genetic_tests, :member_id
   end
 end

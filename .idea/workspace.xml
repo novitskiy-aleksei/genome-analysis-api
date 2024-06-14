@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ec682aa-8bb1-45dd-a669-9c3250e2c381" name="Changes" comment="" />
+    <list default="true" id="6ec682aa-8bb1-45dd-a669-9c3250e2c381" name="Changes" comment="Test request implementation">
+      <change afterPath="$PROJECT_DIR$/app/workers/check_status_worker.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/sidekiq.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20240614165207_add_fields_to_test_results.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/test_results_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/test_results_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20240614083949_create_patients.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20240614084128_create_genetic_tests.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20240614084128_create_genetic_tests.rb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,16 +41,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/onovit/projects/genetic-research",
+    "last_opened_file_path": "/Users/onovit/projects/genetic-research/app/services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
     "settings.editor.selected.configurable": "MTConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/services" />
+    </key>
+  </component>
   <component name="RunManager" selected="Rails.genetic-research">
     <configuration name="genetic-research" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="genetic-research" />
@@ -132,11 +149,43 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718352419441</updated>
-      <workItem from="1718352420760" duration="804000" />
+      <workItem from="1718352420760" duration="11695000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1718354471058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718354471058</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Structure stubs">
+      <option name="closed" value="true" />
+      <created>1718354657133</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718354657133</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Test request implementation">
+      <option name="closed" value="true" />
+      <created>1718382836879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718382836879</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="Structure stubs" />
+    <MESSAGE value="Test request implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test request implementation" />
   </component>
 </project>

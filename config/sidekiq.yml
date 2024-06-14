@@ -1,0 +1,5 @@
+:schedule:
+  check_status_worker:
+    cron: "*/30 * * * *" # every 30 minutes
+    class: CheckStatusWorker
+    queue: default
