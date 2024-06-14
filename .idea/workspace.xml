@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec682aa-8bb1-45dd-a669-9c3250e2c381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/initializers/sidekiq.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718352419441</updated>
       <workItem from="1718352420760" duration="15161000" />
-      <workItem from="1718389717310" duration="8834000" />
+      <workItem from="1718389717310" duration="10797000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -278,7 +277,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718403156276</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added heroku redis configuration">
+      <option name="closed" value="true" />
+      <created>1718403864588</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718403864588</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added heroku redis configuration">
+      <option name="closed" value="true" />
+      <created>1718403898843</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1718403898843</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +314,7 @@
     <MESSAGE value="Update bundler platform" />
     <MESSAGE value="Switch to mysql in production" />
     <MESSAGE value="Added heroku procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added heroku procfile" />
+    <MESSAGE value="Added heroku redis configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added heroku redis configuration" />
   </component>
 </project>
