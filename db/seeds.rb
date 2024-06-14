@@ -32,7 +32,7 @@ test3 = GeneticTest.create!(
   member_id: 3,
   test_type: "targeted_panel",
   sample_type: "saliva",
-  status: "pending",
+  status: "scheduled",
   collection_date: "2024-06-20"
 )
 

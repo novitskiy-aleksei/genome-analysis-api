@@ -2,8 +2,8 @@ class CheckStatusWorker
   include Sidekiq::Worker
 
   def perform
-    GeneticTest.where(status: 'pending').find_each do |genetic_test|
-      response = ColorApi.check_status(genetic_test.id)
+    GeneticTest.where(status: 'scheduled').find_each do |genetic_test|
+      response = api.check_status(genetic_test.id)
 
       if response[:success]
         genetic_test.update(
@@ -12,5 +12,9 @@ class CheckStatusWorker
         )
       end
     end
+  end
+
+  def api
+    @api ||= Object.const_get("Integrations::#{ENV['SOURCE_PROVIDER']}").new
   end
 end

@@ -5,20 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ec682aa-8bb1-45dd-a669-9c3250e2c381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spec/factories/genetic_tests.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/test_results.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/genetic_tests_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/integrations/mock_api.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/genetic_tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/genetic_tests_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/test_results_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/genetic_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/genetic_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/services/test_scheduler_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/test_scheduler_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/workers/check_status_worker.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/workers/check_status_worker.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/sidekiq.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/sidekiq.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20240614084128_create_genetic_tests.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20240614084128_create_genetic_tests.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/service-providers/color_api.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/color_api.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/color_api.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/integrations/color_api.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/genetic_tests_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/genetic_tests_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,47 +32,55 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2hrVwBKMosTRgk1yrsOIo3qZ4X7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Rails.genetic-research.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/onovit/projects/genetic-research/spec",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "MTConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Rails.genetic-research.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/onovit/projects/genetic-research/spec&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/spec" />
       <recent name="$PROJECT_DIR$/app/services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/integrations" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$" />
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Rails.genetic-research">
     <configuration name="genetic-research" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="genetic-research" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -158,7 +167,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718352419441</updated>
-      <workItem from="1718352420760" duration="14685000" />
+      <workItem from="1718352420760" duration="15161000" />
+      <workItem from="1718389717310" duration="4377000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -192,7 +202,31 @@
       <option name="project" value="LOCAL" />
       <updated>1718384855203</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Simplify controllers, fix member_id receiving">
+      <option name="closed" value="true" />
+      <created>1718388163855</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718388163855</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added seeds, tests">
+      <option name="closed" value="true" />
+      <created>1718388277825</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718388277825</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Smoke fixes">
+      <option name="closed" value="true" />
+      <created>1718388311499</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718388311499</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +238,9 @@
     <MESSAGE value="Structure stubs" />
     <MESSAGE value="Test request implementation" />
     <MESSAGE value="Workers and DB structure fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Workers and DB structure fixes" />
+    <MESSAGE value="Simplify controllers, fix member_id receiving" />
+    <MESSAGE value="Added seeds, tests" />
+    <MESSAGE value="Smoke fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Smoke fixes" />
   </component>
 </project>

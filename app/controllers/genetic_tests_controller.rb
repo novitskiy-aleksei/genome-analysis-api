@@ -3,9 +3,8 @@ class GeneticTestsController < ApplicationController
     member_id = params[:member_id]
     test_type = params[:test_type]
     sample_type = params[:sample_type]
-    provider = params[:provider]
 
-    service = TestSchedulerService.new(member_id, test_type, sample_type, provider)
+    service = TestSchedulerService.new(member_id, test_type, sample_type)
     response = service.schedule_test
 
     if response[:success]

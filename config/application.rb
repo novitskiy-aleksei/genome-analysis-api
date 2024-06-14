@@ -25,5 +25,7 @@ module GeneticResearch
     config.api_only = true
 
     config.autoload_paths += %W(#{config.root}/app/services)
+    config.autoload_paths += %W(#{config.root}/lib)
+    config.eager_load_paths += %W(#{config.root}/lib)
   end
 end

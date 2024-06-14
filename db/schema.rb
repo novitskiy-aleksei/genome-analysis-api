@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_06_14_165207) do
     t.integer "member_id", null: false
     t.string "test_type", null: false
     t.string "sample_type", null: false
-    t.string "status", default: "pending", null: false
+    t.string "status", default: "scheduled", null: false
     t.date "collection_date"
     t.text "results"
     t.datetime "created_at", null: false

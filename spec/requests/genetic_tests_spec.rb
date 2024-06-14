@@ -1,17 +1,17 @@
 require 'rails_helper'
-require 'color_api'
+
 
 RSpec.describe "GeneticTests", type: :request do
   let(:member_id) { 1 }
 
   before do
-    allow_any_instance_of(ColorApi).to receive(:schedule_test).and_return({
+    allow_any_instance_of(Integrations::ColorApi).to receive(:schedule_test).and_return({
                                                                             success: true,
                                                                             status: 'scheduled',
                                                                             collection_date: '2024-06-15'
                                                                           })
 
-    allow_any_instance_of(ColorApi).to receive(:check_status).and_return({
+    allow_any_instance_of(Integrations::ColorApi).to receive(:check_status).and_return({
                                                                            success: true,
                                                                            status: 'completed',
                                                                            results: [
